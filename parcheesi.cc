@@ -57,6 +57,7 @@ MovementOutput Parcheesi::ApplyMovement(int pieceIndex, int roll_dice){
     //Turn es el index? Voy a suponer que sí dado que position me parece bastante claro...
     if(player_[current_player_].piece_[i].turn==pieceIndex){
       player_[current_player_].piece_[i].position += roll_dice;
-    }
+    } 
   }
+  return kMovementOutput_BasicMove;
 }
